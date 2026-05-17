@@ -2,8 +2,27 @@ import numbers
 import tkinter
 import tkinter as tk
 from tkinter import *
+from tkinter import messagebox
+import random
+
+score = 0
+qnum = 0
 
 
+# writing & conding down questions and answers
+#-------------------------------------
+questions_answers = [
+   {"1": "What type of briyani is ths",
+    "options": ["Kolkata", "Chicken", "Mutton", "sindhi"],
+    "answer": "2"},
+
+{"2": "What type of briyani is ths",
+    "options": ["Kolkata", "Chicken", "Mutton", "sindhi"],
+    "answer": "4"}
+
+
+
+]
 root = Tk()
 root.geometry("7200x7200")
 
@@ -37,3 +56,4 @@ button.config( height = "2", width = "25", font=("helvetica", 40, "bold"),
 
 
 root.mainloop()
+
