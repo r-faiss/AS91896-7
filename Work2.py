@@ -36,8 +36,12 @@ button.config( height = "2", width = "25", font=("helvetica", 40, "bold"),
               activebackground = "#f67950", activeforeground = "#ffffff" )
 
 # Help button work
-button = tkinter.Button(root, text = "Click to End")
-photo = PhotoImage(file = "Images/homescreen-background.png")
+button = tkinter.Button(root, text = "Need Help?")
+button.place(x=62, y=930)
+button.config( height = "2", width = "20",
+               bg = "#e4643a", fg = "#ffffff",
+               activebackground = "#f67950", activeforeground = "#ffffff")
+
 
 
 root.mainloop()
