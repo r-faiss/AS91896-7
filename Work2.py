@@ -1,8 +1,6 @@
-import numbers
 import tkinter
 import tkinter as tk
 from tkinter import *
-
 
 root = Tk()
 root.geometry("7200x7200")
@@ -34,15 +32,12 @@ button.place(x=954, y=736)
 button.config( height = "2", width = "25", font=("helvetica", 40, "bold"),
               bg = "#e4643a", fg = "#ffffff",
               activebackground = "#f67950", activeforeground = "#ffffff" )
-
+root.mainloop()
 # Help button work
-button = tkinter.Button(root, text = "Need Help?")
-button.place(x=62, y=930)
-button.config( height = "2", width = "20",
-               bg = "#e4643a", fg = "#ffffff",
-               activebackground = "#f67950", activeforeground = "#ffffff")
-
-
+photo = PhotoImage(file = "Question-Mark-Help.png")
+photoimage = photo.subsample(2, 2)
+Button(root, text = "Need help?", image = PhotoImage).place(x = 95, y = 736)
+button.place(x=954, y=736)
 
 root.mainloop()
 
