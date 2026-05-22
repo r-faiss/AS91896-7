@@ -5,39 +5,34 @@ from tkinter import *
 root = Tk()
 root.geometry("7200x7200")
 
-
 #inserting image...
 bg = PhotoImage(file = "Images/homescreen-background.png")
 def on_resize(event):
-   print(F"New size: [{event.width}, {event.height}]")
-
+  print(F"New size: [{event.width}, {event.height}]")
 
 #canvas create
 canvas1 = Canvas(root, width = 600 , height = 600)
 canvas1.pack(fill = "both", expand = True)
 
-
 #image display
 canvas1.create_image(0,0 , image = bg, anchor = "nw")
 
-
 #activate button
 def button_clicked():
-   print("button")
-
+  print("button")
 
 #button work
-button = tkinter.Button(root, text = "Click to Begin")
+button = tkinter.Button(root, text = "Click to Begin!!")
 button.place(x=954, y=736)
 button.config( height = "2", width = "25", font=("helvetica", 40, "bold"),
-              bg = "#e4643a", fg = "#ffffff",
-              activebackground = "#f67950", activeforeground = "#ffffff" )
-root.mainloop()
+             bg = "#e4643a", fg = "#ffffff",
+             activebackground = "#f67950", activeforeground = "#ffffff")
+
 # Help button work
-photo = PhotoImage(file = "Question-Mark-Help.png")
-photoimage = photo.subsample(2, 2)
-Button(root, text = "Need help?", image = PhotoImage).place(x = 95, y = 736)
-button.place(x=954, y=736)
+button = tkinter.Button(root, text = "Need Help ᝰ..ᐣ .ᐣ .ᐣ")
+button.place(x=62, y=930)
+button.config(height = "2", width = "23", font=("helvetica", 10, "bold"),
+              bg="#e4643a", fg="#ffffff",
+              activebackground="#f67950", activeforeground="#ffffff")
 
 root.mainloop()
-
