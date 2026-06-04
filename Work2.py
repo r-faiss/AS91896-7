@@ -2,6 +2,40 @@ import tkinter
 import tkinter as tk
 from tkinter import *
 
+score = 0
+qnum = 0
+
+#-------------------------------------
+# writing & coding down questions and answers
+#-------------------------------------
+
+questions_answers = [
+
+{"1": "What type of briyani is ths",
+   "options": ["Kolkata", "Chicken", "Mutton", "sindhi"],
+   "answer": "2"},
+
+{"2": "what is the most well known dish in japan",
+   "options": ["Ramen", "Mochi", "Sushi", "Tempura"],
+   "answer": "3"},
+
+{"3": "what is the national fruit in india, often used in various dishes",
+   "options": ["Pineapple", "Apple", "Mangosteen", "Mango"],
+   "answer": "4"},
+
+{"4": "In what country did tiramisu originate",
+   "options": ["Japan", "Italy", "South Korea", "Mexico"],
+   "answer": "2"},
+
+{"5": "what is the most well known dish in japan",
+   "options": ["Ramen", "Mochi", "Sushi", "Tempura"],
+   "answer": "3"},
+
+{"5": "what is the most well known dish in japan",
+   "options": ["Ramen", "Mochi", "Sushi", "Tempura"],
+   "answer": "3"}
+]
+
 root = Tk()
 root.geometry("7200x7200")
 
